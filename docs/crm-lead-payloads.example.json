@@ -1,0 +1,50 @@
+{
+  "crmApiUrl": "POST https://www.zohoapis.in/crm/v7/functions/add_website_lead/actions/execute?auth_type=apikey&zapikey=YOUR_KEY",
+  "payloadFormat": "{ \"params\": { ...all fields } }",
+  "admissions_enquiry": {
+    "params": {
+      "First_Name": "Arjun",
+      "Last_Name": "Sharma",
+      "Parent_or_Guardian_Name": "Priya Sharma",
+      "Email": "priya@example.com",
+      "Phone": "+919876543210",
+      "Mobile": "+919876543210",
+      "Grade_Applying_For": "Class 3",
+      "Preferred_Visit_Time": "2026-09-06T10:30:00+05:30",
+      "Preferred_Visit_Date": "2026-09-06",
+      "Preferred_Visit_Time_Only": "10:30:00",
+      "Message": "We are moving to Sarjapura next month.",
+      "URL": "https://wellspringsacademy.in/admissions?utm_source=google",
+      "UTM_Source": "google",
+      "UTM_Medium": "cpc",
+      "UTM_Campaign": "admissions_2026",
+      "UTM_Term": "cbse school sarjapura",
+      "UTM_Content": "hero_cta",
+      "Ad_Group": "brand_keywords",
+      "UTM_Device": "mobile",
+      "UTM_Age_Group": "35-44",
+      "UTM_Gender_Group": "all"
+    }
+  },
+  "visit_booking": {
+    "params": {
+      "First_Name": "Meera",
+      "Last_Name": "Nair",
+      "Parent_or_Guardian_Name": "Anita Nair",
+      "Phone": "+919876543210",
+      "Mobile": "+919876543210",
+      "Grade_Applying_For": "Nursery",
+      "Comments": "Prefer a Saturday morning visit.",
+      "URL": "https://wellspringsacademy.in/?utm_source=facebook",
+      "UTM_Source": "facebook",
+      "UTM_Medium": "social",
+      "UTM_Campaign": "campus_visit",
+      "UTM_Term": "NA",
+      "UTM_Content": "video_ad",
+      "Ad_Group": "parents_bengaluru",
+      "UTM_Device": "desktop",
+      "UTM_Age_Group": "25-34",
+      "UTM_Gender_Group": "female"
+    }
+  }
+}
