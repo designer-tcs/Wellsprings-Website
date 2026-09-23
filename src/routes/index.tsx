@@ -159,8 +159,11 @@ function HomePage() {
       {/* THE SCHOOL AT A GLANCE — six ways in */}
       <section id="at-a-glance" className="border-t border-[var(--grey-200)] bg-[var(--ws-paper)]">
         <Reveal><div className="mx-auto w-full max-w-[1320px] px-5 py-14 md:px-8 md:py-24">
-          <SectionEyebrow>WELLSPRINGS IN 5 POINTS</SectionEyebrow>
+          <SectionEyebrow>THE WELLSPRINGS EXPERIENCE</SectionEyebrow>
           <h2 className="mt-4 text-4xl leading-[1.05] md:text-6xl">School At A Glance</h2>
+          <p className="mt-5 max-w-[54ch] text-[17px] leading-[1.75] text-[var(--grey-800)]">
+            A quick look at the learning, opportunities, spaces and support that shape everyday life at Wellsprings.
+          </p>
           <FiveWaysIn />
         </div></Reveal>
       </section>

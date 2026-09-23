@@ -24,10 +24,10 @@ const PANELS: Panel[] = [
   {
     key: "academics",
     label: "Academics",
-    title: "Learning by asking",
-    sub: "Fifteen to a teacher. Nobody drifts.",
+    title: "Strong Foundations. Clear Understanding.",
+    sub: "A CBSE curriculum built around concept clarity and steady academic progress.",
     body:
-      "Children are asked what they notice before they are given the answer. Four times a year you get a written account of your child, not just a grade.",
+      "Children learn to understand, connect and apply ideas with confidence across subjects.",
     cta: { label: "See the curriculum", href: "/curriculum" },
     // Mind · Coral 600 — academics, reading, inquiry, curriculum
     bg: "#CF4E3C",
@@ -39,10 +39,10 @@ const PANELS: Panel[] = [
   {
     key: "beyond-books",
     label: "Beyond Books",
-    title: "Sport and the arts, in the timetable",
-    sub: "Part of the week, not added to the end of it.",
+    title: "Learning Goes Further.",
+    sub: "Experiences beyond academics help children discover more of what they can do.",
     body:
-      "Coached games, and art, music, dance and theatre taught by specialists. Clubs, public speaking and robotics run through the year.",
+      "Sport, STEAM, art, communication and activities build confidence, creativity and practical skills.",
     cta: { label: "See Beyond Books", href: "/beyond-books" },
     // Body · Sun 600 — sport, music, making, movement. Type in Ink.
     bg: "#D4BE3F",
@@ -54,10 +54,10 @@ const PANELS: Panel[] = [
   {
     key: "campus",
     label: "Campus",
-    title: "Ten acres",
-    sub: "Room to run, rooms to build in.",
+    title: "Space To Learn And Grow.",
+    sub: "A 10-acre campus designed around the needs of a complete school day.",
     body:
-      "Playing fields, courts and a swimming pool outside. Four science laboratories, a STEAM lab, a maker space and a library inside.",
+      "Classrooms, labs, the library, swimming pool and activity spaces give children room to learn, explore and stay active.",
     cta: { label: "See the campus", href: "/campus" },
     // Heart · Sage 600
     bg: "#5FA57B",
@@ -69,10 +69,10 @@ const PANELS: Panel[] = [
   {
     key: "life",
     label: "Life here",
-    title: "What a day actually feels like",
-    sub: "A routine that is filled with continuous learning",
+    title: "A School To Belong To.",
+    sub: "Children thrive when they feel known, included and comfortable being themselves.",
     body:
-      "Field visits, nights away from home, and a whole year carried by one idea. This year it is Roots to Wings.",
+      "Daily school life encourages friendships, participation, expression and a strong sense of community.",
     cta: { label: "See life at Wellsprings", href: "/life" },
     // Anchor · Slate 600
     bg: "#354251",
@@ -84,10 +84,10 @@ const PANELS: Panel[] = [
   {
     key: "care",
     label: "Care",
-    title: "Somebody always notices",
-    sub: "Every learner. Every day. By name.",
+    title: "Support That Stays Close.",
+    sub: "Care at Wellsprings is attentive, practical and part of the everyday.",
     body:
-      "On the first mornings, no child is made to walk into class before they are ready. There is a counsellor, a nurse, and a teacher who notices when something has changed.",
+      "Teachers, clear parent communication and dedicated medical support help ensure that concerns are noticed and addressed early.",
     cta: { label: "Read Why Wellsprings", href: "/why-wellsprings" },
     // Heart · Sage at its background tint — the quieter side of Belong
     bg: "var(--sage-200)",

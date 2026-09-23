@@ -442,11 +442,24 @@ function AboutPage() {
       </SectionShell>
 
       {/* Directors */}
-      <SectionShell background="grey" title="The Directors.">
-        <div className="grid gap-6">
-          {DIRECTORS.map((d) => (
-            <Fragment key={d.name}>
-              <article className="grid gap-8 border border-[var(--grey-200)] bg-white md:grid-cols-[0.75fr_1.25fr]">
+      {DIRECTORS.map((d, i) => (
+        <Fragment key={d.name}>
+          <section className="border-t border-[var(--grey-200)] bg-[var(--grey-100)]">
+            <div
+              className={`mx-auto w-full max-w-[1320px] px-5 pt-14 md:px-8 md:pt-28 ${
+                "quote" in d && d.quote ? "pb-0" : "pb-14 md:pb-28"
+              }`}
+            >
+              {i === 0 ? (
+                <div className="max-w-[60ch]">
+                  <h2 className="text-4xl leading-[1.06] md:text-6xl">The Directors.</h2>
+                </div>
+              ) : null}
+              <article
+                className={`grid gap-8 border border-[var(--grey-200)] bg-white md:grid-cols-[0.75fr_1.25fr] ${
+                  i === 0 ? "mt-10" : ""
+                }`}
+              >
                 <Portrait name={d.name} role={d.role} image={d.image} />
                 <div className="flex flex-col justify-center p-8 md:py-10 md:pr-10">
                   <SectionEyebrow>{d.role}</SectionEyebrow>
@@ -461,25 +474,29 @@ function AboutPage() {
                   ))}
                 </div>
               </article>
-              {"quote" in d && d.quote ? (
-                <blockquote className="border border-[var(--grey-200)] bg-[var(--ws-ink)] px-8 py-12 text-center text-white md:px-14 md:py-16">
-                  <p className="mx-auto max-w-[62ch] font-serif text-2xl leading-[1.35] md:text-4xl">
-                    &ldquo;{d.quote}&rdquo;
-                  </p>
-                  <footer className="mt-8">
-                    <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-[var(--slate-200)]">
-                      {d.name}
+            </div>
+            {"quote" in d && d.quote ? (
+              <div className="bg-[var(--slate-1000)] text-white">
+                <div className="mx-auto w-full max-w-[1320px] px-5 py-14 md:px-8 md:py-28">
+                  <blockquote className="mx-auto max-w-[62ch] text-center">
+                    <p className="font-serif text-3xl leading-[1.25] md:text-5xl">
+                      &ldquo;{d.quote}&rdquo;
                     </p>
-                    <p className="mt-2 text-sm text-[var(--slate-200)]">
-                      {d.role}, Wellsprings Academy
-                    </p>
-                  </footer>
-                </blockquote>
-              ) : null}
-            </Fragment>
-          ))}
-        </div>
-      </SectionShell>
+                    <footer className="mt-8">
+                      <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-[var(--slate-200)]">
+                        {d.name}
+                      </p>
+                      <p className="mt-2 text-sm text-[var(--slate-200)]">
+                        {d.role}, Wellsprings Academy
+                      </p>
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+            ) : null}
+          </section>
+        </Fragment>
+      ))}
 
       {/* Principal */}
       <SectionShell
